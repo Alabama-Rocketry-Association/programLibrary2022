@@ -1,0 +1,12 @@
+Inside crontab -e:
+```
+@reboot /home/ara/Desktop/runpython.sh # runs the sh file
+```
+
+Inside /home/ara/Desktop/runpython.sh
+```
+cd /home/pi/PDF_launch # changes to the directory that stores python file
+pwd
+python main.py # runs the python file
+
+```
