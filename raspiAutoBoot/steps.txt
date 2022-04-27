@@ -1,12 +1,15 @@
 Inside crontab -e:
 ```
-@reboot /home/ara/Desktop/runpython.sh # runs the sh file
+@reboot sudo /home/ara/Desktop/runpython.sh # runs the sh file
 ```
 
 Inside /home/ara/Desktop/runpython.sh
 ```
 cd /home/pi/PDF_launch # changes to the directory that stores python file
 pwd
-python main.py # runs the python file
+sudo python main.py # runs the python file
 
 ```
+
+NOTES FOR FAILURES:
+make sure all python libraries are installed in the root directory, do this by doing sudo pip install <library>
